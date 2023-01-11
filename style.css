@@ -1,0 +1,206 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    max-width: 1440px;
+
+    display: grid;
+    place-content: center;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin: 10% auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+/* General styles that applies on all elements*/
+label {
+    font-size: 13px;
+    opacity: 50%;
+}
+input {
+    outline: none;
+}
+
+
+/* Left Side Container Design Code*/
+
+.left--side--container {
+    display: grid; 
+    grid-template-rows: repeat(3, fr);
+}
+.bill--amount{
+    outline: none;
+    margin-top: 7px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: hsl(189, 41%, 97%);
+    padding: 3px;
+
+    font-size: 24px;
+    text-align: right;
+
+    color: hsl(183, 100%, 15%);
+    background-image: url(icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.bill--amount:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+
+
+.select--tip--row {
+    margin-top: 10%;
+}
+.top--tip{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+.custom--tip--amount, button{
+    width: 95px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+button {
+    background-color: hsl(183, 95%, 22%);
+    color: white;
+    font-size: 15px;
+}
+button:hover {
+    background-color: hsl(172, 67%, 45%);
+    transition: 0.3s;
+}
+button:focus {
+    background-color: hsl(172, 67%, 45%);
+}
+.custom--tip--amount {
+    text-align: center;
+    border: 2px solid white;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+.custom--tip--amount:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.middle--tip {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+
+.number--people--row {
+    margin-top: 10%;
+}
+
+.number--people--input {
+    outline: none;
+    margin-top: 7px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: hsl(189, 41%, 97%);
+    padding: 3px;
+
+    font-size: 24px;
+    text-align: right;
+
+    color: hsl(183, 100%, 15%);
+    background-image: url(icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.number--people--input:focus {
+    
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+
+
+
+/* Right Side Container Design Code*/
+.right--side--container {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    place-content: center;
+}
+
+
+
+
+.table--of--tip {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+ th {
+    padding: 5px 1px;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+    font-size: 15px;
+
+ }
+
+ td {
+    padding: 15px 34px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-image: url(icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+ }
+.total--tip, .tip--per--person{
+color: white;
+}
+
+
+.special{
+    background-color: hsl(183, 100%, 15%);
+    background-image: none;
+}
+
+.calculation--bottom--row {
+    display: grid;
+    place-content: center;
+}
+
+
+@media (max-width: 726px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .right--side--container {
+        margin-top: 40px;
+    }
+}

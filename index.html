@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iman Jallali">
+    <link rel="icon" href="i.png">
+    <title>Splitter</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="function.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--left Side container Starts-->
+        <div class="left--side--container">
+
+                <div class="bill--row">
+                    <label for="billamount">Bill</label><br>
+                    <input type="text" name = "billamount" class="bill--amount" >
+                </div>
+
+                <div class="select--tip--row">
+                    <div class="selectlabel"><label for="">Select Tip %</label></div>
+                    <div class="top--tip">
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                    </div>
+                    <div class="middle--tip">
+                            <button>25%</button>
+                            <button>50%</button>
+                            
+                            <input type="text" class="custom--tip--amount" placeholder="Custom">
+                    </div>
+
+                    
+                </div>
+                
+                <div class="number--people--row">
+                    <label for="numberofpeople">Number of People</label><br>
+                    <input type="text" name="numberofpeople" class="number--people--input">
+                </div>
+        </div>
+
+
+        <!--right Side container Starts-->
+        <div class="right--side--container">
+            <div class="calculation--top--row">
+                    <table class="table--of--tip">
+                        <thead>
+                            <th>Tip/person</th>
+                            <br><th class="special"></th>
+                            <th>Total Tip</th>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td class="tip--per--person">0.002</td>
+                                <td class="special"></td>
+                                <td class="total--tip">0.122</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="calculation--bottom--row">
+                <button>RESET</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
