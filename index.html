@@ -8,8 +8,6 @@
     <link rel="icon" href="i.png">
     <title>Splitter</title>
     <link rel="stylesheet" href="style.css">
-    
-    <script src="function.js"></script>
 </head>
 <body>
     <div class="container">
@@ -18,21 +16,21 @@
 
                 <div class="bill--row">
                     <label for="billamount">Bill</label><br>
-                    <input type="text" name = "billamount" class="bill--amount" >
+                    <input type="text" name = "billamount" class="bill--amount" value="" type="number">
                 </div>
 
                 <div class="select--tip--row">
                     <div class="selectlabel"><label for="">Select Tip %</label></div>
                     <div class="top--tip">
-                        <button>5%</button>
-                        <button>10%</button>
-                        <button>15%</button>
+                        <button class="percent5">5%</button>
+                        <button class="percent10">10%</button>
+                        <button class="percent15">15%</button>
                     </div>
                     <div class="middle--tip">
-                            <button>25%</button>
-                            <button>50%</button>
+                            <button class="percent25">25%</button>
+                            <button class="percent50">50%</button>
                             
-                            <input type="text" class="custom--tip--amount" placeholder="Custom">
+                            <input type="text" class="custom--tip--amount" placeholder="Custom" value="" type="number">
                     </div>
 
                     
@@ -40,7 +38,7 @@
                 
                 <div class="number--people--row">
                     <label for="numberofpeople">Number of People</label><br>
-                    <input type="text" name="numberofpeople" class="number--people--input">
+                    <input type="text" name="numberofpeople" class="number--people--input" value type="number">
                 </div>
         </div>
 
@@ -57,18 +55,21 @@
                         
                         <tbody>
                             <tr>
-                                <td class="tip--per--person">0.002</td>
+                                <td class="tip--per--person">0000</td>
                                 <td class="special"></td>
-                                <td class="total--tip">0.122</td>
+                                <td class="total--tip">0000</td>
                             </tr>
                         </tbody>
                     </table>
             </div>
             <div class="calculation--bottom--row">
-                <button>RESET</button>
+                <button class="restbtn">Reset</button>
             </div>
         </div>
     </div>
+    
+<script src="function.js"></script>
 </body>
 
+    
 </html>
