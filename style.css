@@ -204,3 +204,14 @@ color: white;
         margin-top: 40px;
     }
 }
+
+
+
+/* Class we need to apply dynamcilly using JS */ 
+
+.wrong--input {
+    border: 2px solid red;
+}
+.correct--input {
+  border: 2px solid white;
+}
